@@ -1,0 +1,87 @@
+/* This is our css file */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url("../img/bg.jpg");
+}
+.box-1 {
+  /* background-color: rgb(250,150,150); */
+  padding: 10px 10px 10px 10px;
+  margin: 30px 30px 30px 30px;
+  border: 3px solid #DDD;
+
+}
+.main{
+  background: rgba(200,200,200,0.40);
+  margin:auto;
+  width: 90%;
+  font-family: sans-serif;
+}
+.box-2 {
+
+  font-family: cursive;
+  /* background-color: rgb(250,150,150); */
+  padding: 10px 10px 10px 10px;
+  margin: 30px 30px 30px 30px;
+  border: 3px solid #DDD;
+  border-radius: 8px;
+}
+
+.category {
+  background: rgba(200,200,200,0.40);
+  margin:auto;
+  width: 90%;
+  font-family: sans-serif;
+  /* background-color: rgb(250,150,150); */
+  margin: 30px 30px 30px 30px;
+  border: 3px solid #DDD;
+  border-radius: 8px;
+}
+
+h2{
+  text-align: center;
+  color: #353535;
+}
+
+.category ul {
+    padding: 20px 50px 30px 40px;
+    list-style: none;
+}
+
+.category li{
+  padding-bottom: 6px;
+  border-bottom: 1px dotted #CCC;
+}
+
+ ul li a {
+  color: #404040;
+  text-decoration: none;
+}
+.category ul li a:hover{
+  font-color: #808080;
+}
+
+h1{
+  text-align: center;
+  color: Red;
+  font-weight: bold;
+
+}
+.box-1 h1{
+  text-align: left;
+  color: blue;
+  font-family: sans-serif;
+}
+
+.button{
+  background-color: #000;
+  color: #FFF;
+  padding: 10px 10px 10px 10px;
+  border-radius: 6px;
+  border: 3px solid #444;
+}
+p:last-child{
+  color:red;
+}

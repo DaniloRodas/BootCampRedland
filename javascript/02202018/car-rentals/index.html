@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Oswald:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Redlands Car Rentals</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Redlands Car Rentals</h1>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+              <img class="card-img-top" src="img/challenger.jpg" alt="Dodge Challenger">
+              <div class="card-body">
+                <h5 class="card-title">Dodge Challenger</h5>
+              </div>
+              <div class="card-body">
+                <a href="#" onclick="getDetails1()" class="btn btn-primary" data-toggle="modal" data-target="#carDetailsModal1">Get Details</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+              <img class="card-img-top" src="img/accord.jpg" alt="Honda Accord">
+              <div class="card-body">
+                <h5 class="card-title">Honda Accord</h5>
+              </div>
+              <div class="card-body">
+                <a href="#" onclick="getDetails2()" class="btn btn-primary" data-toggle="modal" data-target="#carDetailsModal2">Get Details</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+              <img class="card-img-top" src="img/denali.jpg" alt="GMC Denali">
+              <div class="card-body">
+                <h5 class="card-title">GMC Denali</h5>
+              </div>
+              <div class="card-body">
+                <a href="#" onclick="getDetails3()" class="btn btn-primary" data-toggle="modal" data-target="#carDetailsModal3">Get Details</a>
+              </div>
+          </div>
+        </div>
+
+      </div> <!-- end row -->
+
+    </div> <!-- end container -->
+
+
+    <div class="modal" id="carDetailsModal1" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="car1MakeModel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group">
+              <li class="list-group-item">Year: <span id="car1Year"></span></li>
+              <li class="list-group-item">MPG: <span id="car1MPG"></span></li>
+              <li class="list-group-item">Engine: <span id="car1Engine"></span></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Reserve Car</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="carDetailsModal2" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="car2MakeModel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group">
+              <li class="list-group-item">Year: <span id="car2Year"></span></li>
+              <li class="list-group-item">MPG: <span id="car2MPG"></span></li>
+              <li class="list-group-item">Engine: <span id="car2Engine"></span></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Reserve Car</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="carDetailsModal3" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="car3MakeModel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group">
+              <li class="list-group-item">Year: <span id="car3Year"></span></li>
+              <li class="list-group-item">MPG: <span id="car3MPG"></span></li>
+              <li class="list-group-item">Engine: <span id="car3Engine"></span></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Reserve Car</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
